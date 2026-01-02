@@ -1,13 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package service;
 
-/**
- *
- * @author Gihani
- */
-public class ReportService {
-    
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Map;
+
+public interface ReportService {
+    Map<String, Long> mostUsedFacilities(LocalDate from, LocalDate to);
+    Map<String, Long> busiestHours(LocalDate from, LocalDate to);
+    Map<String, Double> incomeByMonth(int year);
+    List<String[]> rawPayments(LocalDate from, LocalDate to);
 }
+
