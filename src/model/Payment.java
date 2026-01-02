@@ -9,6 +9,7 @@ public class Payment {
     private double amount;
     private double discount;
     private LocalDateTime paidAt;
+    private PaymentMethod method;
     private String reference;
 
     public Long getId() { return id; }
