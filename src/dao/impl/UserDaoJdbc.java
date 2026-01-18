@@ -15,7 +15,7 @@ import java.util.Optional;
 
 public class UserDaoJdbc implements UserDao {
     
-    // POLYMORPHISM: Method overriding - provides JDBC-specific implementation
+    
     @Override
     public Long create(User user) {
         String sql = "INSERT INTO users(email, password_hash, full_name, role, phone, coach_fee) VALUES(?,?,?,?,?,?)";
