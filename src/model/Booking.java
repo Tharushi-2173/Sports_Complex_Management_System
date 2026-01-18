@@ -3,25 +3,10 @@ package model;
 
 import java.time.LocalDateTime;
 
-/**
- * Abstract Booking class demonstrating INHERITANCE and ABSTRACTION principles
- * 
- * INHERITANCE CONCEPTS DEMONSTRATED:
- * 1. Base Class: This abstract class serves as the parent/base class for all booking types
- * 2. Common Properties: Shared fields and methods are defined in the base class
- * 3. Code Reuse: Child classes inherit common functionality, reducing code duplication
- * 4. Polymorphic Behavior: Child classes can be treated as Booking instances
- * 5. Method Overriding: Child classes can override abstract methods with specific implementations
- * 
- * ABSTRACTION CONCEPTS DEMONSTRATED:
- * 1. Abstract Class: Cannot be instantiated directly, serves as a template
- * 2. Abstract Method: calculateCost() must be implemented by child classes
- * 3. Interface Definition: Defines the contract that all booking types must follow
- * 4. Implementation Hiding: Specific cost calculation logic is hidden in child classes
- * 5. Template Method Pattern: Common structure with customizable behavior
- */
-public abstract class Booking {
-    // INHERITANCE: Common fields shared by all booking types
+
+public abstract class Booking 
+{
+    
     private Long id;
     private Long memberId;
     private Long facilityId;
@@ -38,6 +23,7 @@ public abstract class Booking {
     public abstract double calculateCost(double hourlyRate);
 
     // INHERITANCE: Common getter/setter methods inherited by all child classes
+   
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
 
@@ -67,6 +53,7 @@ public abstract class Booking {
 
     public double getTotalFee() { return totalFee; }
     public void setTotalFee(double totalFee) { this.totalFee = totalFee; }
+    
 }
 
 
