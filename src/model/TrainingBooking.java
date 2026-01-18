@@ -18,7 +18,6 @@ public class TrainingBooking extends Booking {
         // POLYMORPHISM: Different calculation logic for training bookings (includes coaching multiplier)
         double coachingFeeMultiplier = 1.25; // 25% premium for training sessions
         
-        double coachingFeeMultiplier = 1.25; 
         return Math.round(hours * hourlyRate * coachingFeeMultiplier * 100.0) / 100.0;
     }
 }

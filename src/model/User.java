@@ -8,15 +8,14 @@ public class User {
     
     private Long id;
     private String email;
-    private String passwordHash;  // Sensitive data properly encapsulated
-    private String passwordHash;  
+    private String passwordHash;  // Sensitive data properly encapsulated  
     private String fullName;
     private Role role;
     private String phone;
     private Instant createdAt;
     private Instant updatedAt;
     private Double coachFee; // per-hour fee for coaches (nullable)
-    private Double coachFee; 
+
 
     // ENCAPSULATION: Public getter methods provide controlled read access
     
