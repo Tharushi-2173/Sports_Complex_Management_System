@@ -4,28 +4,23 @@ import java.time.Instant;
 
 
 public class User {
-    // ENCAPSULATION: Private fields - data is hidden from external access
+   
     
     private Long id;
     private String email;
-    private String passwordHash;  // Sensitive data properly encapsulated  
+    private String passwordHash;  
     private String fullName;
     private Role role;
     private String phone;
     private Instant createdAt;
     private Instant updatedAt;
-    private Double coachFee; // per-hour fee for coaches (nullable)
-
-
-    // ENCAPSULATION: Public getter methods provide controlled read access
+    private Double coachFee;    
     
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
 
     public String getEmail() { return email; }
-    public void setEmail(String email) { this.email = email; }
-
-    // ENCAPSULATION: Password hash is protected - only accessible through controlled methods
+    public void setEmail(String email) { this.email = email; }  
     
     public String getPasswordHash() { return passwordHash; }
     public void setPasswordHash(String passwordHash) { this.passwordHash = passwordHash; }
@@ -37,17 +32,13 @@ public class User {
     public void setRole(Role role) { this.role = role; }
 
     public String getPhone() { return phone; }
-    public void setPhone(String phone) { this.phone = phone; }
-
-    // ENCAPSULATION: Timestamp fields are read-only from external perspective
+    public void setPhone(String phone) { this.phone = phone; }    
    
     public Instant getCreatedAt() { return createdAt; }
     public void setCreatedAt(Instant createdAt) { this.createdAt = createdAt; }
 
     public Instant getUpdatedAt() { return updatedAt; }
     public void setUpdatedAt(Instant updatedAt) { this.updatedAt = updatedAt; }
-
-    // ENCAPSULATION: Coach fee is optional and properly encapsulated
     
     public Double getCoachFee() { return coachFee; }
     public void setCoachFee(Double coachFee) { this.coachFee = coachFee; }
