@@ -91,7 +91,7 @@ public class DashboardPanel extends JPanel {
             side.add(navButton("Payments", "payments", () -> { ensure("payments", new ui.screens.PaymentsPanel(user)); contentLayout.show(content, "payments"); })); 
             side.add(navButton("Maintenance", "maintenance", () -> { ensure("maintenance", new ui.screens.MaintenancePanel(user)); contentLayout.show(content, "maintenance"); }));
             side.add(navButton("Feedback", "feedback", () -> { ensure("feedback", new ui.screens.FeedbackPanel(user)); contentLayout.show(content, "feedback"); })); 
-            side.add(navButton("Reports", "reports", () -> { ensure("reports", new ui.screens.ReportsPanel()); contentLayout.show(content, "reports"); }));
+           
         }
 
         if (user.getRole() == Role.COACH) {
