@@ -12,23 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-/**
- * UserDaoJdbc class demonstrating POLYMORPHISM and ABSTRACTION principles
- * 
- * POLYMORPHISM CONCEPTS DEMONSTRATED:
- * 1. Interface Implementation: Implements UserDao interface
- * 2. Method Overriding: Provides concrete implementation of all interface methods
- * 3. Runtime Polymorphism: Can be used wherever UserDao is expected
- * 4. Dynamic Method Dispatch: JVM calls the correct implementation at runtime
- * 5. Substitutability: Can be substituted for any UserDao implementation
- * 
- * ABSTRACTION CONCEPTS DEMONSTRATED:
- * 1. Implementation Hiding: Hides JDBC-specific implementation details
- * 2. Database Abstraction: Client code doesn't need to know about SQL or JDBC
- * 3. Encapsulation: Database operations are encapsulated within this class
- * 4. Interface Segregation: Implements only the UserDao contract
- * 5. Dependency Inversion: Depends on abstractions (UserDao interface)
- */
+
 public class UserDaoJdbc implements UserDao {
     
     // POLYMORPHISM: Method overriding - provides JDBC-specific implementation
