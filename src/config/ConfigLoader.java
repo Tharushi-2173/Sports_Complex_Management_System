@@ -17,7 +17,7 @@ public class ConfigLoader {
                 PROPERTIES.load(in);
             }
         } catch (IOException e) {
-            // Fallback to environment variables if properties not present
+            
         }
     }
 
