@@ -9,7 +9,9 @@ public class FacilityBooking extends Booking {
        
         Duration d = Duration.between(getStartTime(), getEndTime());
         double hours = d.toMinutes() / 60.0;
-        if (hours < 0) hours = 0;
+        if (hours < 0) 
+            hours = 0;
+        
        
         return Math.round(hours * hourlyRate * 100.0) / 100.0;
     }
